@@ -5,10 +5,10 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location:beforeInstall
+    - location: AWS/beforeInstall
       timeout: 300
       runas: ubuntu
   AfterInstall:
-    - location:AfterInstall
+    - location: AWS/AfterInstall
       timeout: 300
       runas: ubuntu
