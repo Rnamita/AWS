@@ -5,10 +5,10 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: deploy/beforeInstall
+    - location: /opt/codedeploy-agent/deployment-root/183bcec6-cf83-4224-9e14-81eafd09dcc8/d-LGG4JY8P9/deployment-archive/deploy/beforeInstall
       timeout: 300
       runas: ubuntu
   AfterInstall:
-    - location: deploy/AfterInstall
+    - location: /opt/codedeploy-agent/deployment-root/183bcec6-cf83-4224-9e14-81eafd09dcc8/d-LGG4JY8P9/deployment-archive/deploy/AfterInstall
       timeout: 300
       runas: ubuntu
